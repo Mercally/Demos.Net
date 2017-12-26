@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Principal";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">@ViewBag.Message</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h4>Acceso a módulos</h4>
+        <ul>
+            <li>@Html.ActionLink("Ir a modulo de usuarios", "Index", "Usuario")</li>
+            <li>@Html.ActionLink("Ir a calculadora.", "Index", "Calculadora")</li>
+        </ul>
+    </div>
+</div>

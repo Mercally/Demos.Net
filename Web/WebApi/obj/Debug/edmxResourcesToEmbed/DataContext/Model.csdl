@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NotificationsDemoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="NotificationsDemoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Notificaciones" EntityType="NotificationsDemoModel.Notificaciones" />
+    <EntitySet Name="Permisos" EntityType="NotificationsDemoModel.Permisos" />
+    <EntitySet Name="PermisosDenegadosPorRol" EntityType="NotificationsDemoModel.PermisosDenegadosPorRol" />
+    <EntitySet Name="RegistroNotificaciones" EntityType="NotificationsDemoModel.RegistroNotificaciones" />
+    <EntitySet Name="Roles" EntityType="NotificationsDemoModel.Roles" />
+    <EntitySet Name="Usuarios" EntityType="NotificationsDemoModel.Usuarios" />
+    <AssociationSet Name="ForeignKey_Notificaciones_Usuarios_UsuarioId" Association="NotificationsDemoModel.ForeignKey_Notificaciones_Usuarios_UsuarioId">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Notificaciones" EntitySet="Notificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="ForeignKey_PermisosDenegadosPorRol_Permisos_PermisoId" Association="NotificationsDemoModel.ForeignKey_PermisosDenegadosPorRol_Permisos_PermisoId">
+      <End Role="Permisos" EntitySet="Permisos" />
+      <End Role="PermisosDenegadosPorRol" EntitySet="PermisosDenegadosPorRol" />
+    </AssociationSet>
+    <AssociationSet Name="ForeignKey_PermisosDenegadosPorRol_Roles_RolId" Association="NotificationsDemoModel.ForeignKey_PermisosDenegadosPorRol_Roles_RolId">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="PermisosDenegadosPorRol" EntitySet="PermisosDenegadosPorRol" />
+    </AssociationSet>
+    <AssociationSet Name="ForeignKey_RegistroNotificaciones_Usuarios_UsuarioId" Association="NotificationsDemoModel.ForeignKey_RegistroNotificaciones_Usuarios_UsuarioId">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="RegistroNotificaciones" EntitySet="RegistroNotificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="ForeignKey_Usuarios_Roles_RolId" Association="NotificationsDemoModel.ForeignKey_Usuarios_Roles_RolId">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <EntitySet Name="BitacoraIngresos" EntityType="NotificationsDemoModel.BitacoraIngresos" />
+  </EntityContainer>
+  <EntityType Name="Notificaciones">
+    <Key>
+      <PropertyRef Name="NotificacionId" />
+    </Key>
+    <Property Name="NotificacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioId" Type="Int32" Nullable="false" />
+    <Property Name="Titulo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cuerpo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="AgregadoEn" Type="DateTime" Precision="3" />
+    <Property Name="Leido" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Usuarios" Relationship="NotificationsDemoModel.ForeignKey_Notificaciones_Usuarios_UsuarioId" FromRole="Notificaciones" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Permisos">
+    <Key>
+      <PropertyRef Name="PermisoId" />
+    </Key>
+    <Property Name="PermisoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CreadoEn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="PermisosDenegadosPorRol" Relationship="NotificationsDemoModel.ForeignKey_PermisosDenegadosPorRol_Permisos_PermisoId" FromRole="Permisos" ToRole="PermisosDenegadosPorRol" />
+    <Property Name="Modulo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PermisosDenegadosPorRol">
+    <Key>
+      <PropertyRef Name="PermisoDenegadoPorRolId" />
+    </Key>
+    <Property Name="PermisoDenegadoPorRolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RolId" Type="Int32" Nullable="false" />
+    <Property Name="PermisoId" Type="Int32" Nullable="false" />
+    <Property Name="CreadoEn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Permisos" Relationship="NotificationsDemoModel.ForeignKey_PermisosDenegadosPorRol_Permisos_PermisoId" FromRole="PermisosDenegadosPorRol" ToRole="Permisos" />
+    <NavigationProperty Name="Roles" Relationship="NotificationsDemoModel.ForeignKey_PermisosDenegadosPorRol_Roles_RolId" FromRole="PermisosDenegadosPorRol" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="RegistroNotificaciones">
+    <Key>
+      <PropertyRef Name="RegistroNotificacionId" />
+    </Key>
+    <Property Name="RegistroNotificacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioId" Type="Int32" Nullable="false" />
+    <Property Name="SuscripcionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Usuarios" Relationship="NotificationsDemoModel.ForeignKey_RegistroNotificaciones_Usuarios_UsuarioId" FromRole="RegistroNotificaciones" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RolId" />
+    </Key>
+    <Property Name="RolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CreadoEn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="PermisosDenegadosPorRol" Relationship="NotificationsDemoModel.ForeignKey_PermisosDenegadosPorRol_Roles_RolId" FromRole="Roles" ToRole="PermisosDenegadosPorRol" />
+    <NavigationProperty Name="Usuarios" Relationship="NotificationsDemoModel.ForeignKey_Usuarios_Roles_RolId" FromRole="Roles" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="UsuarioId" />
+    </Key>
+    <Property Name="UsuarioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RolId" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Correo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreadoEn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Notificaciones" Relationship="NotificationsDemoModel.ForeignKey_Notificaciones_Usuarios_UsuarioId" FromRole="Usuarios" ToRole="Notificaciones" />
+    <NavigationProperty Name="RegistroNotificaciones" Relationship="NotificationsDemoModel.ForeignKey_RegistroNotificaciones_Usuarios_UsuarioId" FromRole="Usuarios" ToRole="RegistroNotificaciones" />
+    <NavigationProperty Name="Roles" Relationship="NotificationsDemoModel.ForeignKey_Usuarios_Roles_RolId" FromRole="Usuarios" ToRole="Roles" />
+  </EntityType>
+  <Association Name="ForeignKey_Notificaciones_Usuarios_UsuarioId">
+    <End Type="NotificationsDemoModel.Usuarios" Role="Usuarios" Multiplicity="1" />
+    <End Type="NotificationsDemoModel.Notificaciones" Role="Notificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="UsuarioId" />
+      </Principal>
+      <Dependent Role="Notificaciones">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ForeignKey_PermisosDenegadosPorRol_Permisos_PermisoId">
+    <End Type="NotificationsDemoModel.Permisos" Role="Permisos" Multiplicity="1" />
+    <End Type="NotificationsDemoModel.PermisosDenegadosPorRol" Role="PermisosDenegadosPorRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permisos">
+        <PropertyRef Name="PermisoId" />
+      </Principal>
+      <Dependent Role="PermisosDenegadosPorRol">
+        <PropertyRef Name="PermisoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ForeignKey_PermisosDenegadosPorRol_Roles_RolId">
+    <End Type="NotificationsDemoModel.Roles" Role="Roles" Multiplicity="1" />
+    <End Type="NotificationsDemoModel.PermisosDenegadosPorRol" Role="PermisosDenegadosPorRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RolId" />
+      </Principal>
+      <Dependent Role="PermisosDenegadosPorRol">
+        <PropertyRef Name="RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ForeignKey_RegistroNotificaciones_Usuarios_UsuarioId">
+    <End Type="NotificationsDemoModel.Usuarios" Role="Usuarios" Multiplicity="1" />
+    <End Type="NotificationsDemoModel.RegistroNotificaciones" Role="RegistroNotificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="UsuarioId" />
+      </Principal>
+      <Dependent Role="RegistroNotificaciones">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ForeignKey_Usuarios_Roles_RolId">
+    <End Type="NotificationsDemoModel.Roles" Role="Roles" Multiplicity="1" />
+    <End Type="NotificationsDemoModel.Usuarios" Role="Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RolId" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="BitacoraIngresos">
+    <Key>
+      <PropertyRef Name="BitacoraIngresosId" />
+    </Key>
+    <Property Name="BitacoraIngresosId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioId" Type="String" MaxLength="36" FixedLength="false" Unicode="true" />
+    <Property Name="NombreUsuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Accion" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NombreCompleto" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Terminal" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

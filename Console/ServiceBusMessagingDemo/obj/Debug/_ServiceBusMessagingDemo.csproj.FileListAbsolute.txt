@@ -1,0 +1,10 @@
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\bin\Debug\ServiceBusMessagingDemo.dll.config
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\bin\Debug\ServiceBusMessagingDemo.dll
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\bin\Debug\ServiceBusMessagingDemo.pdb
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\bin\Debug\Microsoft.ServiceBus.dll
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\bin\Debug\Microsoft.ServiceBus.xml
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\obj\Debug\_ServiceBusMessagingDemo.csprojResolveAssemblyReference.cache
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\obj\Debug\ServiceBusMessagingDemo.dll
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ServiceBusMessagingDemo\obj\Debug\ServiceBusMessagingDemo.pdb

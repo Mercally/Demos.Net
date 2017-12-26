@@ -1,0 +1,60 @@
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.exe
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.pdb
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.ServiceBus.dll
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.pdb
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll.config
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.ServiceBus.xml
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.exe
+c:\users\servercolas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\ServerColas\documents\visual studio 2017\Projects\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.ServiceBus.dll
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.pdb
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll.config
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.ServiceBus.xml
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\MuniAlajuela\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.ServiceBus.dll
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.pdb
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll.config
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.ServiceBus.xml
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\QueueServerDemo\ServiceBusMessagingDemo\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.pdb
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll.config
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\Microsoft.ServiceBus.xml
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\bin\Debug\Microsoft.WindowsAzure.Configuration.xml
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\ServiceBusDemo\ServiceBusDemo\Console\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\ServiceBusQueueDemo\Console\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\ServiceBusQueueDemo\Console\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\ServiceBusQueueDemo\Console\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\ServiceBusQueueDemo\Console\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll
+C:\ServiceBusQueueDemo\Console\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.pdb
+C:\ServiceBusQueueDemo\Console\ConsoleApp\bin\Debug\ServiceBusMessagingDemo.dll.config
+C:\ServiceBusQueueDemo\Console\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\ServiceBusQueueDemo\Console\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\ServiceBusQueueDemo\Console\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\ServiceBusQueueDemo\Console\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
