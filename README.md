@@ -4,7 +4,7 @@ Multi proyecto de prueba. Proyecto desarrollado como parte de varias demostracio
 Características:
 - C# como lenguaje de programación de servidor
 - JavaScript como lenguaje cliente
-- SQL-Transact como lenguaje de base de datos
+- T-SQL como lenguaje de base de datos
 - Estructura de la solución en capas
 - Uso de Razor, HTML5 y CSS3
 
