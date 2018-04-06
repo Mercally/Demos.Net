@@ -12,7 +12,7 @@ Demos que se abordan:
 - Sitio desarrollado con MVC 5
 - Service Bus 1.1 (Válido para Azure y Windows Server)
 - Push Notifications (SignalR)
-- Web Api 2 (RestFull)
+- Web Api 2 (RestFul)
 
 Base de datos:
 - SQL Server
